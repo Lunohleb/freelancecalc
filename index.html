@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ФрилансКальк — бесплатные калькуляторы для фрилансеров и самозанятых</title>
+<meta name="description" content="Бесплатные онлайн-калькуляторы для фрилансеров: ставка, стоимость проекта, бюджет, накопления, прибыль и наценка. Без регистрации, расчёты в браузере.">
+<link rel="canonical" href="https://USERNAME.github.io/freelancecalc/">
+<meta property="og:url" content="https://USERNAME.github.io/freelancecalc/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="ФрилансКальк">
+<meta property="og:title" content="ФрилансКальк — бесплатные калькуляторы для фрилансеров и самозанятых">
+<meta property="og:description" content="Бесплатные онлайн-калькуляторы для фрилансеров: ставка, стоимость проекта, бюджет, накопления, прибыль и наценка. Без регистрации, расчёты в браузере.">
+<meta property="og:image" content="https://USERNAME.github.io/freelancecalc/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f6feb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f6feb'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3E€%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ФрилансКальк", "url": "https://USERNAME.github.io/freelancecalc/", "inLanguage": "ru"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ФрилансКальк", "url": "https://USERNAME.github.io/freelancecalc/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Сайт бесплатный?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Все калькуляторы бесплатны и работают без регистрации."}}, {"@type": "Question", "name": "Где хранятся мои данные?", "acceptedAnswer": {"@type": "Answer", "text": "Расчёты выполняются в вашем браузере и не отправляются на сервер. Избранное и недавние инструменты хранятся в LocalStorage вашего устройства."}}, {"@type": "Question", "name": "Можно ли использовать другую валюту?", "acceptedAnswer": {"@type": "Answer", "text": "Сейчас основная валюта — евро (€). Выбор других валют будет добавлен позже."}}, {"@type": "Question", "name": "Заменяют ли расчёты налоговую консультацию?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Налоговая ставка в калькуляторах — условный параметр. Для точных расчётов обратитесь к налоговому консультанту."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="index.html" aria-label="ФрилансКальк — на главную"><i>€</i>ФрилансКальк</a>
+  
+  <nav id="nav" aria-label="Основное меню">
+   <a href="vse-kalkulyatory.html">Все калькуляторы</a>
+   <div class="dd"><button aria-haspopup="true">Категории ▾</button>
+    <div class="dd-menu">
+     <a href="vse-kalkulyatory.html">Работа и фриланс</a>
+     <a href="vse-kalkulyatory.html">Финансы и накопления</a>
+     <a href="vse-kalkulyatory.html">Бизнес и заработок</a>
+     <a href="vse-kalkulyatory.html">Генераторы документов</a>
+    </div></div>
+   <a href="blog/index.html">Блог</a>
+   <a href="o-proekte.html">О проекте</a>
+   <a href="kontakty.html">Контакты</a>
+  </nav>
+  <button id="theme" type="button" aria-label="Переключить тему">🌙</button>
+  <button id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">☰</button>
+ </div>
+</header>
+
+<main id="main">
+ <section class="hero">
+  <div class="wrap">
+   <h1>Зарабатывай больше. Планируй умнее. Управляй финансами</h1>
+   <p class="lead">Бесплатные калькуляторы и инструменты, которые помогают рассчитывать доход, оценивать стоимость работы, планировать бюджет и развивать своё дело.</p>
+   <a class="btn" href="vse-kalkulyatory.html">Все инструменты</a>
+   <div class="search" role="search">
+    <label for="q" class="skip">Поиск по калькуляторам</label>
+    <input id="q" type="search" placeholder="Найти калькулятор: например, «ставка» или «бюджет»" autocomplete="off">
+    <div id="results" hidden></div>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap">
+   <h2>Популярные инструменты</h2>
+   <p class="sub">С них чаще всего начинают фрилансеры.</p>
+   <div class="grid" id="popular"><article class="card"><a class="card-link" href="calculators/dohod-frilansera.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор дохода фрилансера</h3><p>Сколько вы заработаете в месяц и год при вашей ставке</p></a></article><article class="card"><a class="card-link" href="calculators/pochasovaya-stavka.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор почасовой ставки</h3><p>Какую ставку назначить, чтобы выйти на нужный доход</p></a></article><article class="card"><a class="card-link" href="calculators/stoimost-proekta.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор стоимости проекта</h3><p>Цена проекта по часам, рискам и расходам</p></a></article><article class="card"><a class="card-link" href="calculators/nakopleniya.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор накоплений</h3><p>Сколько накопится при регулярных взносах</p></a></article><article class="card"><a class="card-link" href="calculators/mesyachnyj-byudzhet.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор ежемесячного бюджета</h3><p>Доходы, расходы и остаток за месяц</p></a></article><article class="card"><a class="card-link" href="calculators/slozhnye-protsenty.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор сложных процентов</h3><p>Рост вложений с капитализацией</p></a></article><article class="card"><a class="card-link" href="calculators/pribyl.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор прибыли</h3><p>Валовая и чистая прибыль, маржа</p></a></article><article class="card"><a class="card-link" href="calculators/natsenka.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор наценки</h3><p>Цена продажи по себестоимости и наценке</p></a></article></div>
+   <div id="recent-wrap" hidden style="margin-top:32px"><h3>Недавно использованные</h3><div class="grid" id="recent"></div></div>
+   <div style="margin-top:32px"><h3>Избранное</h3><div class="grid" id="favs"></div></div>
+  </div>
+ </section>
+
+ <section class="alt">
+  <div class="wrap">
+   <h2>Категории калькуляторов</h2>
+   <div class="grid">
+    <article class="card"><a class="cat" href="vse-kalkulyatory.html"><span class="ico">💼</span><h3>Работа и фриланс</h3><p>Ставка, доход, время и стоимость проектов</p></a></article>
+    <article class="card"><a class="cat" href="vse-kalkulyatory.html"><span class="ico">🏦</span><h3>Финансы и накопления</h3><p>Бюджет, проценты, цели и экономия</p></a></article>
+    <article class="card"><a class="cat" href="vse-kalkulyatory.html"><span class="ico">📈</span><h3>Бизнес и заработок</h3><p>Прибыль, наценка и точка безубыточности</p></a></article>
+    <article class="card"><a class="cat" href="vse-kalkulyatory.html"><span class="ico">📄</span><h3>Генераторы документов</h3><p>Счета, предложения и планы</p></a></article>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap">
+   <h2>Новые инструменты</h2>
+   <div class="grid" id="new"><article class="card"><a class="card-link" href="calculators/schet-za-uslugi.html"><span class="tag">Генераторы документов</span><h3>Генератор простого счёта за услуги</h3><p>Готовый счёт для клиента</p></a></article><article class="card"><a class="card-link" href="calculators/kommercheskoe-predlozhenie.html"><span class="tag">Генераторы документов</span><h3>Генератор коммерческого предложения</h3><p>Структурированное предложение клиенту</p></a></article><article class="card"><a class="card-link" href="calculators/opisanie-uslugi.html"><span class="tag">Генераторы документов</span><h3>Генератор описания услуги</h3><p>Текст для профиля или сайта</p></a></article><article class="card"><a class="card-link" href="calculators/plan-dohodov-i-rashodov.html"><span class="tag">Генераторы документов</span><h3>Генератор плана доходов и расходов</h3><p>Финансовый план на период</p></a></article></div>
+   <div class="ad-slot" data-slot="home-mid" hidden></div>
+  </div>
+ </section>
+
+ <section class="alt">
+  <div class="wrap">
+   <h2>Полезные статьи</h2>
+   <div class="grid">
+    <article class="card"><a class="card-link" href="#a-kak-rasschitat-stoimost-rabochego-chasa"><span class="tag">Блог</span><h3>Как правильно рассчитать стоимость своего рабочего часа</h3><p>Из чего складывается ставка и почему её нельзя брать «с потолка».</p></a></article>
+    <article class="card"><a class="card-link" href="#a-kak-opredelit-tsenu-uslug"><span class="tag">Блог</span><h3>Как фрилансеру определить цену своих услуг</h3><p>Три подхода к цене: по часам, по проекту, по ценности.</p></a></article>
+    <article class="card"><a class="card-link" href="#a-kak-nakopit-pervye-1000-evro"><span class="tag">Блог</span><h3>Как накопить первые 1000 евро</h3><p>Пошаговый план без жёстких ограничений.</p></a></article>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap">
+   <h2>Преимущества платформы</h2>
+   <div class="grid">
+    <article class="card"><div class="cat"><span class="ico">🆓</span><h3>Бесплатно</h3><p>Все инструменты доступны без оплаты и регистрации.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">🔒</span><h3>Конфиденциально</h3><p>Расчёты идут в браузере — ваши цифры не уходят на сервер.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">⚡</span><h3>Быстро</h3><p>Лёгкие страницы без лишних скриптов, удобно на телефоне.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">🧮</span><h3>С объяснением формул</h3><p>Под каждым результатом — как он получен.</p></div></article>
+   </div>
+   <p class="note">Калькуляторы дают оценку и не гарантируют доход. Налоговые ставки в расчётах — условный параметр и не заменяют консультацию специалиста.</p>
+  </div>
+ </section>
+
+ <section class="alt">
+  <div class="wrap" style="max-width:820px">
+   <h2>Вопросы и ответы</h2>
+   <details><summary>Сайт бесплатный?</summary><p>Да. Все калькуляторы бесплатны и работают без регистрации.</p></details>
+   <details><summary>Где хранятся мои данные?</summary><p>Расчёты выполняются в вашем браузере и не отправляются на сервер. Избранное и недавние инструменты хранятся в LocalStorage вашего устройства.</p></details>
+   <details><summary>Можно ли использовать другую валюту?</summary><p>Сейчас основная валюта — евро (€). Выбор других валют будет добавлен позже.</p></details>
+   <details><summary>Заменяют ли расчёты налоговую консультацию?</summary><p>Нет. Налоговая ставка в калькуляторах — условный параметр. Для точных расчётов обратитесь к налоговому консультанту.</p></details>
+  </div>
+ </section>
+ <section id="catalog" class="alt"><div class="wrap"><h2>Все калькуляторы</h2><p class="sub">25 инструментов в четырёх категориях.</p><div id="catalog-list"><h3 style="margin-top:24px">💼 Работа и фриланс</h3><div class="grid"><article class="card"><a class="card-link" href="calculators/dohod-frilansera.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор дохода фрилансера</h3><p>Сколько вы заработаете в месяц и год при вашей ставке</p></a></article><article class="card"><a class="card-link" href="calculators/pochasovaya-stavka.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор почасовой ставки</h3><p>Какую ставку назначить, чтобы выйти на нужный доход</p></a></article><article class="card"><a class="card-link" href="calculators/stoimost-proekta.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор стоимости проекта</h3><p>Цена проекта по часам, рискам и расходам</p></a></article><article class="card"><a class="card-link" href="calculators/zarabotok-za-den.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор заработка за день</h3><p>Дневной доход по ставке и часам</p></a></article><article class="card"><a class="card-link" href="calculators/zarabotok-za-nedelyu.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор заработка за неделю</h3><p>Недельный доход с учётом выходных</p></a></article><article class="card"><a class="card-link" href="calculators/rabochee-vremya.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор рабочего времени</h3><p>Рабочие часы за период с учётом перерывов</p></a></article><article class="card"><a class="card-link" href="calculators/stoimost-chasa-s-rashodami.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор стоимости часа с учётом расходов</h3><p>Реальная цена часа после расходов и простоев</p></a></article><article class="card"><a class="card-link" href="calculators/dohod-nepolnaya-zanyatost.html"><span class="tag">Работа и фриланс</span><h3>Калькулятор дохода при неполной занятости</h3><p>Доход при частичной занятости</p></a></article></div><h3 style="margin-top:24px">🏦 Финансы и накопления</h3><div class="grid"><article class="card"><a class="card-link" href="calculators/nakopleniya.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор накоплений</h3><p>Сколько накопится при регулярных взносах</p></a></article><article class="card"><a class="card-link" href="calculators/mesyachnyj-byudzhet.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор ежемесячного бюджета</h3><p>Доходы, расходы и остаток за месяц</p></a></article><article class="card"><a class="card-link" href="calculators/protsenty.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор процентов</h3><p>Проценты от числа, прирост и разница</p></a></article><article class="card"><a class="card-link" href="calculators/slozhnye-protsenty.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор сложных процентов</h3><p>Рост вложений с капитализацией</p></a></article><article class="card"><a class="card-link" href="calculators/finansovaya-tsel.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор финансовой цели</h3><p>Сколько откладывать, чтобы достичь цели</p></a></article><article class="card"><a class="card-link" href="calculators/rashody.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор расходов</h3><p>Сумма и доли расходов по категориям</p></a></article><article class="card"><a class="card-link" href="calculators/ekonomiya-deneg.html"><span class="tag">Финансы и накопления</span><h3>Калькулятор экономии денег</h3><p>Сколько даст сокращение трат за год</p></a></article></div><h3 style="margin-top:24px">📈 Бизнес и заработок</h3><div class="grid"><article class="card"><a class="card-link" href="calculators/pribyl.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор прибыли</h3><p>Валовая и чистая прибыль, маржа</p></a></article><article class="card"><a class="card-link" href="calculators/rentabelnost.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор рентабельности</h3><p>Рентабельность продаж и затрат</p></a></article><article class="card"><a class="card-link" href="calculators/natsenka.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор наценки</h3><p>Цена продажи по себестоимости и наценке</p></a></article><article class="card"><a class="card-link" href="calculators/tochka-bezubytochnosti.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор точки безубыточности</h3><p>Сколько продаж нужно, чтобы выйти в ноль</p></a></article><article class="card"><a class="card-link" href="calculators/stoimost-uslugi.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор стоимости услуги</h3><p>Цена услуги с расходами и желаемой прибылью</p></a></article><article class="card"><a class="card-link" href="calculators/dohodnost-proekta.html"><span class="tag">Бизнес и заработок</span><h3>Калькулятор доходности проекта</h3><p>ROI и срок окупаемости</p></a></article></div><h3 style="margin-top:24px">📄 Генераторы документов</h3><div class="grid"><article class="card"><a class="card-link" href="calculators/schet-za-uslugi.html"><span class="tag">Генераторы документов</span><h3>Генератор простого счёта за услуги</h3><p>Готовый счёт для клиента</p></a></article><article class="card"><a class="card-link" href="calculators/kommercheskoe-predlozhenie.html"><span class="tag">Генераторы документов</span><h3>Генератор коммерческого предложения</h3><p>Структурированное предложение клиенту</p></a></article><article class="card"><a class="card-link" href="calculators/opisanie-uslugi.html"><span class="tag">Генераторы документов</span><h3>Генератор описания услуги</h3><p>Текст для профиля или сайта</p></a></article><article class="card"><a class="card-link" href="calculators/plan-dohodov-i-rashodov.html"><span class="tag">Генераторы документов</span><h3>Генератор плана доходов и расходов</h3><p>Финансовый план на период</p></a></article></div></div></div></section>
+ <section id="blog"><div class="wrap"><h2>Блог</h2><div class="grid" id="blog-list"><article class="card"><a class="card-link" href="blog/kak-rasschitat-stoimost-rabochego-chasa.html"><span class="tag">Блог</span><h3>Как правильно рассчитать стоимость своего рабочего часа</h3><p>Из чего складывается ставка и почему её нельзя брать «с потолка».</p></a></article><article class="card"><a class="card-link" href="blog/kak-opredelit-tsenu-uslug.html"><span class="tag">Блог</span><h3>Как фрилансеру определить цену своих услуг</h3><p>Три подхода к цене: по часам, за проект и по ценности для клиента.</p></a></article><article class="card"><a class="card-link" href="blog/kak-nakopit-pervye-1000-evro.html"><span class="tag">Блог</span><h3>Как накопить первые 1000 евро</h3><p>Пошаговый план накоплений без жёстких ограничений.</p></a></article><article class="card"><a class="card-link" href="blog/kak-planirovat-lichnyj-byudzhet.html"><span class="tag">Блог</span><h3>Как правильно планировать личный бюджет</h3><p>Простая система учёта денег для тех, у кого доход меняется от месяца к месяцу.</p></a></article><article class="card"><a class="card-link" href="blog/kak-uvelichit-dohod-na-frilanse.html"><span class="tag">Блог</span><h3>Как увеличить доход на фрилансе</h3><p>Четыре рычага роста: ставка, загрузка, размер чека и повторные клиенты.</p></a></article><article class="card"><a class="card-link" href="blog/kak-rasschitat-pribyl-malogo-biznesa.html"><span class="tag">Блог</span><h3>Как рассчитать прибыль небольшого бизнеса</h3><p>Чем валовая прибыль отличается от чистой и как посчитать маржу и точку безубыточности.</p></a></article><article class="card"><a class="card-link" href="blog/kak-rabotat-udalenno-i-zarabatyvat-bolshe.html"><span class="tag">Блог</span><h3>Как работать удалённо и зарабатывать больше</h3><p>Режим, учёт времени, поиск клиентов и резерв: что реально влияет на доход вне офиса.</p></a></article><article class="card"><a class="card-link" href="blog/kak-uchityvat-rashody-frilansera.html"><span class="tag">Блог</span><h3>Как правильно учитывать расходы фрилансера</h3><p>Какие расходы записывать, как их группировать и зачем это нужно для цены и налогов.</p></a></article><article class="card"><a class="card-link" href="blog/kak-najti-dopolnitelnye-istochniki-dohoda.html"><span class="tag">Блог</span><h3>Как найти дополнительные источники дохода</h3><p>Как искать подработку, не перегружая себя и не попадаясь на обещания лёгких денег.</p></a></article><article class="card"><a class="card-link" href="blog/kak-nachinayushchemu-frilanseru-sostavit-finansovyj-plan.html"><span class="tag">Блог</span><h3>Как начинающему фрилансеру составить финансовый план</h3><p>План на первые месяцы: резерв, минимальный доход и контрольные точки.</p></a></article></div></div></section>
+ <section id="about" class="alt"><div class="wrap" style="max-width:820px"><h2>О проекте</h2><p>ФрилансКальк — бесплатная платформа с калькуляторами для фрилансеров, самозанятых и начинающих предпринимателей. Все расчёты выполняются в вашем браузере.</p>
+  <h3 id="contacts">Контакты</h3><p>Контактные данные указаны на странице «Контакты».</p>
+  <h3 id="privacy">Конфиденциальность</h3><p>Сайт не требует регистрации и не отправляет введённые данные на сервер. Тема, избранное и недавние инструменты хранятся в LocalStorage вашего браузера. Подробности — в политике конфиденциальности.</p>
+  <h3 id="terms">Условия использования</h3><p>Результаты расчётов носят справочный характер, не являются финансовой или налоговой консультацией и не гарантируют доход. Подробности — в пользовательском соглашении.</p></div></section>
+ <section id="legal" hidden><div class="wrap prose" style="max-width:760px"><div id="legal-body"></div></div></section>
+ <section id="article" hidden><div class="wrap" style="max-width:760px"><p><a href="blog/index.html">← Все статьи</a></p><article id="article-body"></article><div class="ad-slot" data-slot="article-bottom" hidden></div><div id="article-extra"></div></div></section>
+ <section id="tool" hidden><div class="wrap" style="max-width:760px"><p><a href="vse-kalkulyatory.html">← Все калькуляторы</a></p><div id="tool-body"></div><div class="ad-slot" data-slot="tool-bottom" hidden></div><aside class="partner-slot" data-slot="partner" hidden></aside><div id="tool-extra"></div></div></section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fcols">
+   <div><strong style="color:var(--ink)">ФрилансКальк</strong><p>Бесплатные калькуляторы для фрилансеров, самозанятых и предпринимателей.</p></div>
+   <div><h4>Инструменты</h4><a href="vse-kalkulyatory.html">Все калькуляторы</a><a href="vse-kalkulyatory.html">Работа и фриланс</a><a href="vse-kalkulyatory.html">Финансы</a><a href="vse-kalkulyatory.html">Бизнес</a><a href="vse-kalkulyatory.html">Генераторы</a></div>
+   <div><h4>Проект</h4><a href="blog/index.html">Блог</a><a href="o-proekte.html">О проекте</a><a href="kontakty.html">Контакты</a></div>
+   <div><h4>Документы</h4><a href="politika-konfidentsialnosti.html">Политика конфиденциальности</a><a href="polzovatelskoe-soglashenie.html">Пользовательское соглашение</a></div>
+  </div>
+  <div class="copy">© <span id="year">2026</span> ФрилансКальк. Расчёты носят справочный характер.</div>
+ </div>
+</footer>
+<div id="consent" class="consent" role="region" aria-label="Уведомление о хранении данных" hidden><p>Сайт не использует рекламные и аналитические cookies. Тема, избранное и недавние инструменты хранятся только в вашем браузере. <a href="politika-konfidentsialnosti.html">Подробнее</a></p><button class="btn" id="consent-ok" type="button">Понятно</button></div>
+
+
+<script>window.R="";window.PAGE={"k": "home"};</script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

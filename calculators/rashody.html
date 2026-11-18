@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Калькулятор расходов онлайн | ФрилансКальк</title>
+<meta name="description" content="Сумма и доли расходов по категориям. Бесплатный онлайн-калькулятор: введите данные (жильё и коммунальные, питание, транспорт) и получите результат сразу.…">
+<link rel="canonical" href="https://USERNAME.github.io/freelancecalc/calculators/rashody.html">
+<meta property="og:url" content="https://USERNAME.github.io/freelancecalc/calculators/rashody.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="ФрилансКальк">
+<meta property="og:title" content="Калькулятор расходов онлайн | ФрилансКальк">
+<meta property="og:description" content="Сумма и доли расходов по категориям. Бесплатный онлайн-калькулятор: введите данные (жильё и коммунальные, питание, транспорт) и получите результат сразу.…">
+<meta property="og:image" content="https://USERNAME.github.io/freelancecalc/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f6feb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f6feb'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3E€%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Калькулятор расходов", "description": "Сумма и доли расходов по категориям. Бесплатный онлайн-калькулятор: введите данные (жильё и коммунальные, питание, транспорт) и получите результат сразу.…", "url": "https://USERNAME.github.io/freelancecalc/calculators/rashody.html", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": "ru", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Как считается результат?", "acceptedAnswer": {"@type": "Answer", "text": "Итого — сумма всех категорий. Доля = категория ÷ итого × 100. В день = итого ÷ 30."}}, {"@type": "Question", "name": "Какие данные нужно ввести?", "acceptedAnswer": {"@type": "Answer", "text": "Нужно указать: Жильё и коммунальные, €; Питание, €; Транспорт, €; Прочее, €."}}, {"@type": "Question", "name": "Можно ли полагаться на результат?", "acceptedAnswer": {"@type": "Answer", "text": "Это справочная оценка по введённым вами данным, а не гарантия дохода. Для важных решений проверьте цифры у специалиста."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://USERNAME.github.io/freelancecalc/"}, {"@type": "ListItem", "position": 2, "name": "Все калькуляторы", "item": "https://USERNAME.github.io/freelancecalc/vse-kalkulyatory.html"}, {"@type": "ListItem", "position": 3, "name": "Калькулятор расходов", "item": "https://USERNAME.github.io/freelancecalc/calculators/rashody.html"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="../index.html" aria-label="ФрилансКальк — на главную"><i>€</i>ФрилансКальк</a>
+  
+  <nav id="nav" aria-label="Основное меню">
+   <a href="../vse-kalkulyatory.html">Все калькуляторы</a>
+   <div class="dd"><button aria-haspopup="true">Категории ▾</button>
+    <div class="dd-menu">
+     <a href="../vse-kalkulyatory.html">Работа и фриланс</a>
+     <a href="../vse-kalkulyatory.html">Финансы и накопления</a>
+     <a href="../vse-kalkulyatory.html">Бизнес и заработок</a>
+     <a href="../vse-kalkulyatory.html">Генераторы документов</a>
+    </div></div>
+   <a href="../blog/index.html">Блог</a>
+   <a href="../o-proekte.html">О проекте</a>
+   <a href="../kontakty.html">Контакты</a>
+  </nav>
+  <button id="theme" type="button" aria-label="Переключить тему">🌙</button>
+  <button id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">☰</button>
+ </div>
+</header>
+
+<main id="main">
+ <section class="hero" hidden>
+  <div class="wrap">
+   <h1>Зарабатывай больше. Планируй умнее. Управляй финансами</h1>
+   <p class="lead">Бесплатные калькуляторы и инструменты, которые помогают рассчитывать доход, оценивать стоимость работы, планировать бюджет и развивать своё дело.</p>
+   <a class="btn" href="../vse-kalkulyatory.html">Все инструменты</a>
+   <div class="search" role="search">
+    <label for="q" class="skip">Поиск по калькуляторам</label>
+    <input id="q" type="search" placeholder="Найти калькулятор: например, «ставка» или «бюджет»" autocomplete="off">
+    <div id="results" hidden></div>
+   </div>
+  </div>
+ </section>
+
+ <section hidden>
+  <div class="wrap">
+   <h2>Популярные инструменты</h2>
+   <p class="sub">С них чаще всего начинают фрилансеры.</p>
+   <div class="grid" id="popular"></div>
+   <div id="recent-wrap" hidden style="margin-top:32px"><h3>Недавно использованные</h3><div class="grid" id="recent"></div></div>
+   <div style="margin-top:32px"><h3>Избранное</h3><div class="grid" id="favs"></div></div>
+  </div>
+ </section>
+
+ <section class="alt" hidden>
+  <div class="wrap">
+   <h2>Категории калькуляторов</h2>
+   <div class="grid">
+    <article class="card"><a class="cat" href="../vse-kalkulyatory.html"><span class="ico">💼</span><h3>Работа и фриланс</h3><p>Ставка, доход, время и стоимость проектов</p></a></article>
+    <article class="card"><a class="cat" href="../vse-kalkulyatory.html"><span class="ico">🏦</span><h3>Финансы и накопления</h3><p>Бюджет, проценты, цели и экономия</p></a></article>
+    <article class="card"><a class="cat" href="../vse-kalkulyatory.html"><span class="ico">📈</span><h3>Бизнес и заработок</h3><p>Прибыль, наценка и точка безубыточности</p></a></article>
+    <article class="card"><a class="cat" href="../vse-kalkulyatory.html"><span class="ico">📄</span><h3>Генераторы документов</h3><p>Счета, предложения и планы</p></a></article>
+   </div>
+  </div>
+ </section>
+
+ <section hidden>
+  <div class="wrap">
+   <h2>Новые инструменты</h2>
+   <div class="grid" id="new"></div>
+   <div class="ad-slot" data-slot="home-mid" hidden></div>
+  </div>
+ </section>
+
+ <section class="alt" hidden>
+  <div class="wrap">
+   <h2>Полезные статьи</h2>
+   <div class="grid">
+    <article class="card"><a class="card-link" href="#a-kak-rasschitat-stoimost-rabochego-chasa"><span class="tag">Блог</span><h3>Как правильно рассчитать стоимость своего рабочего часа</h3><p>Из чего складывается ставка и почему её нельзя брать «с потолка».</p></a></article>
+    <article class="card"><a class="card-link" href="#a-kak-opredelit-tsenu-uslug"><span class="tag">Блог</span><h3>Как фрилансеру определить цену своих услуг</h3><p>Три подхода к цене: по часам, по проекту, по ценности.</p></a></article>
+    <article class="card"><a class="card-link" href="#a-kak-nakopit-pervye-1000-evro"><span class="tag">Блог</span><h3>Как накопить первые 1000 евро</h3><p>Пошаговый план без жёстких ограничений.</p></a></article>
+   </div>
+  </div>
+ </section>
+
+ <section hidden>
+  <div class="wrap">
+   <h2>Преимущества платформы</h2>
+   <div class="grid">
+    <article class="card"><div class="cat"><span class="ico">🆓</span><h3>Бесплатно</h3><p>Все инструменты доступны без оплаты и регистрации.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">🔒</span><h3>Конфиденциально</h3><p>Расчёты идут в браузере — ваши цифры не уходят на сервер.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">⚡</span><h3>Быстро</h3><p>Лёгкие страницы без лишних скриптов, удобно на телефоне.</p></div></article>
+    <article class="card"><div class="cat"><span class="ico">🧮</span><h3>С объяснением формул</h3><p>Под каждым результатом — как он получен.</p></div></article>
+   </div>
+   <p class="note">Калькуляторы дают оценку и не гарантируют доход. Налоговые ставки в расчётах — условный параметр и не заменяют консультацию специалиста.</p>
+  </div>
+ </section>
+
+ <section class="alt" hidden>
+  <div class="wrap" style="max-width:820px">
+   <h2>Вопросы и ответы</h2>
+   <details><summary>Сайт бесплатный?</summary><p>Да. Все калькуляторы бесплатны и работают без регистрации.</p></details>
+   <details><summary>Где хранятся мои данные?</summary><p>Расчёты выполняются в вашем браузере и не отправляются на сервер. Избранное и недавние инструменты хранятся в LocalStorage вашего устройства.</p></details>
+   <details><summary>Можно ли использовать другую валюту?</summary><p>Сейчас основная валюта — евро (€). Выбор других валют будет добавлен позже.</p></details>
+   <details><summary>Заменяют ли расчёты налоговую консультацию?</summary><p>Нет. Налоговая ставка в калькуляторах — условный параметр. Для точных расчётов обратитесь к налоговому консультанту.</p></details>
+  </div>
+ </section>
+ <section id="catalog" class="alt" hidden><div class="wrap"><h2>Все калькуляторы</h2><p class="sub">25 инструментов в четырёх категориях.</p><div id="catalog-list"></div></div></section>
+ <section id="blog" hidden><div class="wrap"><h2>Блог</h2><div class="grid" id="blog-list"></div></div></section>
+ <section id="about" class="alt" hidden><div class="wrap" style="max-width:820px"><h2>О проекте</h2><p>ФрилансКальк — бесплатная платформа с калькуляторами для фрилансеров, самозанятых и начинающих предпринимателей. Все расчёты выполняются в вашем браузере.</p>
+  <h3 id="contacts">Контакты</h3><p>Контактные данные указаны на странице «Контакты».</p>
+  <h3 id="privacy">Конфиденциальность</h3><p>Сайт не требует регистрации и не отправляет введённые данные на сервер. Тема, избранное и недавние инструменты хранятся в LocalStorage вашего браузера. Подробности — в политике конфиденциальности.</p>
+  <h3 id="terms">Условия использования</h3><p>Результаты расчётов носят справочный характер, не являются финансовой или налоговой консультацией и не гарантируют доход. Подробности — в пользовательском соглашении.</p></div></section>
+ <section id="legal" hidden><div class="wrap prose" style="max-width:760px"><div id="legal-body"></div></div></section>
+ <section id="article" hidden><div class="wrap" style="max-width:760px"><p><a href="../blog/index.html">← Все статьи</a></p><article id="article-body"></article><div class="ad-slot" data-slot="article-bottom" hidden></div><div id="article-extra"></div></div></section>
+ <section id="tool"><div class="wrap" style="max-width:760px"><p><a href="../vse-kalkulyatory.html">← Все калькуляторы</a></p><div id="tool-body"><span class="tag">Финансы и накопления</span><h1 style="font-size:1.8rem">Калькулятор расходов</h1><p>Сумма и доли расходов по категориям.</p><noscript><p class="note">Для работы инструмента включите JavaScript.</p></noscript></div><div class="ad-slot" data-slot="tool-bottom" hidden></div><aside class="partner-slot" data-slot="partner" hidden></aside><div id="tool-extra"><h2>Пример расчёта</h2><p>При значениях по умолчанию (Жильё и коммунальные, €: 800; Питание, €: 400; Транспорт, €: 100; Прочее, €: 300) калькулятор показывает: Всего в месяц — 1 600,00 €; В среднем в день — 53,33 €; Доля жилья — 50 %; Доля питания — 25 %.</p><h2>Частые вопросы</h2><details><summary>Как считается результат?</summary><p>Итого — сумма всех категорий. Доля = категория ÷ итого × 100. В день = итого ÷ 30.</p></details><details><summary>Какие данные нужно ввести?</summary><p>Нужно указать: Жильё и коммунальные, €; Питание, €; Транспорт, €; Прочее, €.</p></details><details><summary>Можно ли полагаться на результат?</summary><p>Это справочная оценка по введённым вами данным, а не гарантия дохода. Для важных решений проверьте цифры у специалиста.</p></details><h2>Похожие инструменты</h2><ul><li><a href="../calculators/nakopleniya.html">Калькулятор накоплений</a></li><li><a href="../calculators/mesyachnyj-byudzhet.html">Калькулятор ежемесячного бюджета</a></li><li><a href="../calculators/protsenty.html">Калькулятор процентов</a></li><li><a href="../calculators/slozhnye-protsenty.html">Калькулятор сложных процентов</a></li></ul><h2>Читайте в блоге</h2><ul><li><a href="../blog/kak-uchityvat-rashody-frilansera.html">Как правильно учитывать расходы фрилансера</a></li></ul></div></div></section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fcols">
+   <div><strong style="color:var(--ink)">ФрилансКальк</strong><p>Бесплатные калькуляторы для фрилансеров, самозанятых и предпринимателей.</p></div>
+   <div><h4>Инструменты</h4><a href="../vse-kalkulyatory.html">Все калькуляторы</a><a href="../vse-kalkulyatory.html">Работа и фриланс</a><a href="../vse-kalkulyatory.html">Финансы</a><a href="../vse-kalkulyatory.html">Бизнес</a><a href="../vse-kalkulyatory.html">Генераторы</a></div>
+   <div><h4>Проект</h4><a href="../blog/index.html">Блог</a><a href="../o-proekte.html">О проекте</a><a href="../kontakty.html">Контакты</a></div>
+   <div><h4>Документы</h4><a href="../politika-konfidentsialnosti.html">Политика конфиденциальности</a><a href="../polzovatelskoe-soglashenie.html">Пользовательское соглашение</a></div>
+  </div>
+  <div class="copy">© <span id="year">2026</span> ФрилансКальк. Расчёты носят справочный характер.</div>
+ </div>
+</footer>
+<div id="consent" class="consent" role="region" aria-label="Уведомление о хранении данных" hidden><p>Сайт не использует рекламные и аналитические cookies. Тема, избранное и недавние инструменты хранятся только в вашем браузере. <a href="../politika-konfidentsialnosti.html">Подробнее</a></p><button class="btn" id="consent-ok" type="button">Понятно</button></div>
+
+
+<script>window.R="../";window.PAGE={"k": "tool", "s": "rashody"};</script>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
